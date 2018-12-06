@@ -19,11 +19,6 @@ cd xz-$version
 make
 make pkgconfigdir=/usr/lib/pkgconfig DESTDIR=$PKG install
 
-mkdir -pv $PKG/bin
-
-mv -v   $PKG/usr/bin/{lzma,unlzma,lzcat,xz,unxz,xzcat} \
-$PKG/bin
-
 mkdir -pv $PKG/{,usr/}lib
 
 mv -v $PKG/usr/lib/liblzma.so.* \
