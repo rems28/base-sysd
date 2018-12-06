@@ -13,5 +13,5 @@ cd $name-$version
 ./configure --prefix=/usr
 make
 make DESTDIR=$PKG install
-sed -i '1 s/tools/usr/' /usr/bin/checkmk
+sed -i '1 s/tools/usr/' $PKG/usr/bin/checkmk
 }
