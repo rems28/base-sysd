@@ -3,9 +3,9 @@ description="Commands for Manipulating POSIX Access Control Lists."
 contributors="Pierre B"
 packager="tnut <tnut@nutyx.org>"
 name=acl
-version=2.2.52
+version=2.2.53
 
-source=( http://download.savannah.gnu.org/releases/$name/$name-$version.src.tar.gz)
+source=( http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
 
 build() {
 cd acl-*
