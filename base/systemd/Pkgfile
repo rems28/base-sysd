@@ -6,10 +6,13 @@ maintainer="tnut <tnut@nutyx.org>"
 name=systemd
 version=239-6b4878d
 
+PKGMK_IGNORE_UNPACK="yes"
+
 source=(https://github.com/systemd/systemd/archive/v${version:0:3}/systemd-$version.tar.xz
         http://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz)
 
 build () {
+tar -xf systemd-$version.tar.xz
 cd $name-$version
 ln -sf /tools/bin/true /usr/bin/xsltproc
 sed '166,$ d' -i src/resolve/meson.build
