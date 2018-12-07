@@ -12,5 +12,5 @@ build() {
 cd $name-$version
 sed '/install.*libaio.a/s/^/#/' src/Makefile
 make
-make DESTDIR=$PKG install
+make prefix=$PKG/usr install
 }
