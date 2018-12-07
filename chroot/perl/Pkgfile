@@ -1,6 +1,6 @@
 version=5.28.1
-source=(http://ftp.funet.fi/pub/CPAN/src/perl-$version.tar.xz
-	)
+source=(http://ftp.funet.fi/pub/CPAN/src/perl-$version.tar.xz)
+
 build()
 {
 cd perl-$version
