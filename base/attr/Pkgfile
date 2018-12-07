@@ -24,7 +24,7 @@ INSTALL_GROUP=root \
             --bindir=/bin
 
 make
-make  DIST_ROOT=$PKG install install-lib install-dev
+make  DESTDIR=$PKG install
 chmod -v 755 $PKG/usr/lib/libattr.so
 mkdir $PKG/lib
 mv -v $PKG/usr/lib/libattr.so.* $PKG/lib
