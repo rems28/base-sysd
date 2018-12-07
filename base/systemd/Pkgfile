@@ -6,7 +6,7 @@ maintainer="tnut <tnut@nutyx.org>"
 name=systemd
 version=239-6b4878d
 
-source=(https://github.com/systemd/systemd/archive/v${version:0:3}/systemd-$version.tar.gz
+source=(https://github.com/systemd/systemd/archive/v${version:0:3}/systemd-$version.tar.xz
         http://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz)
 
 build () {
