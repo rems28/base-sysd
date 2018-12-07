@@ -16,7 +16,7 @@ INSTALL_GROUP=root \
             --disable-static --bindir=/bin \
             --docdir=/usr/share/doc/$name-$version
 make
-make DIST_ROOT=$PKG install install-lib install-dev
+make DESTDIR=$PKG install
 chmod -v 755 $PKG/usr/lib/libacl.so
 mkdir $PKG/lib
 mv -v $PKG/usr/lib/libacl.so.* $PKG/lib
