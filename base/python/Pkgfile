@@ -16,6 +16,7 @@ source=(http://www.python.org/ftp/python/$version/Python-$version.tar.xz
         python.png)
 
 build() {
+tar -xvf Python-$version.tar.xz
 	cd Python-$version
 	CXX="/usr/bin/g++" \
 	./configure --prefix=/usr \
