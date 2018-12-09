@@ -7,9 +7,9 @@ packager="tnut <tnut@nutyx.org>"
 maintainer="tnut <tnut@nutyx.org>"
 
 name=nutyx
-version=10.4
+version=11
 
-source=(http://downloads.tuxfamily.org/nutyx/files/$name-$version.tar.xz)
+source=(http://downloads.tuxfamily.org/nutyx/files/$name-$version.tar.bz2)
 build () {
 cd $name-$version
 make DESTDIR=$PKG install
