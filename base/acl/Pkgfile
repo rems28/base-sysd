@@ -13,7 +13,7 @@ cd acl-*
 INSTALL_USER=root  \
 INSTALL_GROUP=root \
 ./configure --prefix=/usr --libexecdir=/usr/lib \
-            --disable-static --bindir=/bin \
+            --bindir=/bin \
             --docdir=/usr/share/doc/$name-$version
 make
 make DESTDIR=$PKG install
