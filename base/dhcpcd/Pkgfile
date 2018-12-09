@@ -4,7 +4,7 @@ maintainer="Roy Marples"
 packager="tnut <tnut@nutyx.org>"
 
 name=dhcpcd
-version=7.0.5
+version=7.0.8
 
 source=(http://roy.marples.name/downloads/$name/$name-$version.tar.xz)
 
@@ -12,10 +12,7 @@ build() {
 cd $name-$version
 ./configure --prefix= \
 --libexecdir=/lib/dhcpcd \
---dbdir=/var/tmp
+--dbdir=/var/lib/dhcpcd
 make
 make DESTDIR=$PKG install
-
-# Encore un mechand bug
-rm -r $PKG/var/tmp
 }
