@@ -30,8 +30,10 @@ mkdir -pv $PKG/var/lib/hwclock
 
 make
 make DESTDIR=$PKG  install
-for file in /usr/lib/lib{blkid,mount,uuid}*; do
+for file in /usr/lib/lib{blkid,mount,uuid}*
+do
 rm $file
+done
 }
 devel()
 {
